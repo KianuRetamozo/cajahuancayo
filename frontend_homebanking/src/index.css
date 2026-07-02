@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Paleta de caja municipal peruana: rojo institucional + blanco cálido.
+     No reproduce el logo ni assets de marca de ninguna entidad real. */
+  --color-rojo: #D22730;
+  --color-rojo-dark: #A81E26;
+  --color-rojo-deep: #7A151B;
+  --color-rojo-tint: #FCE9EA;
+
+  --color-oro: #E8A93B;
+  --color-oro-tint: #FBF0DC;
+
+  --color-paper: #FBFAF8;
+  --color-ink: #201C1B;
+  --color-ink-soft: #6B6260;
+  --color-line: #EAE4E1;
+
+  --color-verde: #2E9E5B;
+  --color-verde-tint: #E1F3E8;
+
+  --font-display: 'Manrope', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-display);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}

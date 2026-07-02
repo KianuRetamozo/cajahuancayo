@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Paleta: papel cálido + noche andina + acento terracota + semáforo del negocio */
+  --color-paper: #F7F4EE;
+  --color-paper-dim: #EFEAE0;
+  --color-ink: #232120;
+  --color-ink-soft: #5C5650;
+
+  --color-noche: #1B2A4A;
+  --color-noche-soft: #2C3E63;
+  --color-noche-line: #3C4F78;
+
+  --color-terracota: #C4622D;
+  --color-terracota-soft: #E0895A;
+  --color-terracota-dim: #F2DCC9;
+
+  --color-verde: #3A9D5D;
+  --color-verde-dim: #DCEEE1;
+  --color-ambar: #E0A72E;
+  --color-ambar-dim: #FBEDCF;
+  --color-rojo: #C4453A;
+  --color-rojo-dim: #F6DCDA;
+
+  --font-display: 'Fraunces', serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
