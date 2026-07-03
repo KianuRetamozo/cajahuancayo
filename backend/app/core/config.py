@@ -10,7 +10,7 @@ class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env", extra="ignore")
 
     # BD
-    database_url: str = "postgresql+psycopg://postgres:test@localhost:5432/postgres"
+    database_url: str = "postgresql+psycopg://postgres:test@localhost:5432/dbcajahuancayo"
 
     # JWT
     jwt_secret_key: str = "CAMBIAR_ESTE_SECRETO_EN_PRODUCCION"
