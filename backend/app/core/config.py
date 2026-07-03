@@ -19,9 +19,13 @@ class Settings(BaseSettings):
     refresh_token_expire_days: int = 7
 
     # CORS - dominios del frontend (Core y Homebanking) que pueden llamar al API
+    # Se puede sobreescribir con la variable de entorno CORS_ORIGINS (formato JSON),
+    # por ejemplo en Render:
+    # CORS_ORIGINS=["https://cajahuancayo-frontend-core.onrender.com"]
     cors_origins: list[str] = [
         "http://localhost:5173",
         "http://localhost:5174",
+        "https://cajahuancayo-frontend-core.onrender.com",
     ]
 
 
